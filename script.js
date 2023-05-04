@@ -5,10 +5,10 @@ function btnEncriptar() {
     const textoEncriptado = encriptar(textArea.value);
     mensagem.value = textoEncriptado;
     textArea.value = "";
+    mensagem.style.backgroundImage = "none";
 }
 
 function encriptar (stringEncriptada) {
-
     let matrizCodigo = [["e" , "enter"] , ["i" , "imes"] , ["a" , "ai"] , ["o" , "ober"] , ["u" , "ufat"]];
     stringEncriptada = stringEncriptada.toLowerCase();
 
@@ -25,10 +25,10 @@ function btnDesencriptar() {
     const textoDesencriptado = desencriptar(textArea.value);
     mensagem.value = textoDesencriptado;
     textArea.value = "";
-}
+    mensagem.style.backgroundImage = "none";
+  }
 
 function desencriptar (stringDesencriptada) {
-
     let matrizCodigo = [["e" , "enter"] , ["i" , "imes"] , ["a" , "ai"] , ["o" , "ober"] , ["u" , "ufat"]];
     stringDesencriptada = stringDesencriptada.toLowerCase();
 
@@ -39,4 +39,13 @@ function desencriptar (stringDesencriptada) {
     } 
 
     return stringDesencriptada;
+}
+
+function btnCopiar() {
+    const mensagemCopiada = mensagem.value;
+    navigator.clipboard.writeText(mensagemCopiada).then(() => {
+        alert("Mensagem copiada com sucesso!");
+    }).catch((err) => {
+        console.error('Erro ao copiar mensagem: ', err);
+    });
 }
