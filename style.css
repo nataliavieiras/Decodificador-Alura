@@ -7,8 +7,8 @@
 }
 
 .logoAlura {
-    margin-left: 10px;
-    padding-top: 10px;
+    margin-left: 30px;
+    padding-top: 30px;
     width: 2 %;
 }
 
@@ -16,6 +16,12 @@ main {
     display: flex;
     margin-bottom: 50px;
     margin-left: 80px;
+}
+.informacao {
+    color: #495057;
+    font-size: 18px;
+    Opacity: 80%;
+    margin-top: 100px;
 }
 
 .text-area {
@@ -29,6 +35,17 @@ main {
 .text-area:focus {
     outline: none;
 }
+
+textarea.mensagem::placeholder {
+    color: #343A40;
+    Font family: Inter;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 30px;
+    padding-top: 300px;
+    text-align: center;
+  }
 
 .mensagem {
     background: white;
@@ -85,7 +102,5 @@ main {
     width: 336px;
 }
 
-.informacao {
-    color: #495057;
-    font-size: 18px;
-}
+
+
