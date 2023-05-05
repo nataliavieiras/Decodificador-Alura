@@ -102,5 +102,11 @@ textarea.mensagem::placeholder {
     width: 336px;
 }
 
+.copyright {
+    font-size: 15px;
+    margin-left: 500px;
+    
+}
+
 
 
