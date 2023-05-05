@@ -22,13 +22,13 @@ main {
     font-size: 18px;
     Opacity: 80%;
     margin-top: 100px;
-}
+    }
 
 .text-area {
-    border: none;
+border: none;
     color: #0A3871;
-    margin-top: 90px;
-    text-transform: lowercase;
+margin-top: 90px;
+text-transform: lowercase;
 }
 
 ::placeholder {color: #0A3871;}
@@ -45,11 +45,11 @@ textarea.mensagem::placeholder {
     line-height: 30px;
     padding-top: 300px;
     text-align: center;
-  }
+    }
 
 .mensagem {
     background: white;
-    background-image: url(/Imagens/boneco.png);
+    background-image: url(Imagens/boneco.png);
     background-repeat: no-repeat;
     border: none;
     border-radius: 24px;
@@ -58,6 +58,7 @@ textarea.mensagem::placeholder {
     margin-top: 20px;
     padding-left: 20px;
     position: fixed;
+    background-position: top;
 }
 
 .mensagem:focus {
@@ -104,7 +105,7 @@ textarea.mensagem::placeholder {
 
 .copyright {
     font-size: 15px;
-    margin-left: 500px;
+    text-align: center;
     
 }
 
