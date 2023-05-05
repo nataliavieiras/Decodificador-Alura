@@ -25,10 +25,10 @@ main {
     }
 
 .text-area {
-border: none;
+    border: none;
     color: #0A3871;
-margin-top: 90px;
-text-transform: lowercase;
+    margin-top: 90px;
+    text-transform: lowercase;
 }
 
 ::placeholder {color: #0A3871;}
