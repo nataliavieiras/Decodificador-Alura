@@ -17,12 +17,13 @@ main {
     margin-bottom: 50px;
     margin-left: 80px;
 }
+
 .informacao {
     color: #495057;
     font-size: 18px;
     Opacity: 80%;
     margin-top: 100px;
-    }
+}
 
 .text-area {
     border: none;
@@ -105,9 +106,122 @@ textarea.mensagem::placeholder {
 
 .copyright {
     font-size: 15px;
-    text-align: center;
-    
+    text-align: center; 
 }
 
+/* --------------- Viewport para formato mobile------------*/
 
+@media screen and (max-width: 480px) {
 
+* {
+    background: #E5E5E5; 
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 100%;
+}
+.logoAlura {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-top: 0;
+    padding: 0;
+}
+
+main {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.informacao {
+    color: #495057;
+    font-size: 15px;
+    Opacity: 80%;
+    margin-top: 100px;
+}
+.text-area {
+    border: none;
+    color: #0A3871;
+    margin-top: 0px;
+    text-transform: lowercase;
+    width: 90%;
+    height: 40%;
+}
+textarea.mensagem::placeholder {
+    color: #343A40;
+    Font family: Inter;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+    line-height: 30px;
+    padding-top: 200px;
+    text-align: center;
+}
+.mensagem {
+    background: white;
+    background-image: url(Imagens/boneco.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    display: block;
+    position: static;
+    margin-top: 5%;
+    margin-left: 5px;
+    border-color: #0A3871;
+    background-position: top;
+    padding: 3%;
+    width: 90%;
+}
+.mensagem:focus {
+    outline: none;
+}
+
+.botoes {
+    display: flex;
+    margin-top: 0px;
+}
+
+.btn-descriptar {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 10px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 50px;
+    width: 185px;
+    margin-left: 5px;
+}
+
+.btn-encriptar {
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    margin-left: 5 auto;
+}
+
+.btn-copiar {
+    border: 1px solid #0A3871;
+    border-radius: 10px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 50px;
+    position: static;
+    margin-left: 50% auto;
+    margin-top: 5px;
+    width: 150px;
+    margin-bottom: 0 auto;
+}
+
+.copyright {
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    position: static; 
+    margin-top: 10px;
+}
+}
